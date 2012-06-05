@@ -92,14 +92,29 @@ int mh = 140;
     NSString *qRFile = [dir stringByAppendingPathComponent:@"qR.png"];
     char filename [[qRFile length] + 1];
     [qRFile getCString:filename maxLength:[qRFile length] + 1 encoding:NSUTF8StringEncoding];
+    
+    
     char str [[code length] + 1];
     [code getCString:str maxLength:[code length] + 1 encoding:NSUTF8StringEncoding];
     
+	
+    // by https://github.com/kuapay/iOS-QR-Code-Generator/pull/9/files#diff-2
+    //get char string
+    int len = strlen([code UTF8String]);
+    char *string = (char *)malloc(len+1);
+    memset(string,0,len+1);
+    memcpy(string,[code UTF8String],len);
+    
+    
+    
     CQR_Encode encoder;
-    encoder.EncodeData(1, 0, true, -1, str);
+    encoder.EncodeData(1, 0, true, -1, string);
     
     QRDrawPNG qrDrawPNG;
     qrDrawPNG.draw(filename, 10, encoder.m_nSymbleSize, encoder.m_byModuleData, NULL);
+    
+    free(string);
+    string = nil;
     
     NSData *data = [[NSData alloc] initWithContentsOfFile:qRFile];
     UIImage *image = [UIImage imageWithData:data];

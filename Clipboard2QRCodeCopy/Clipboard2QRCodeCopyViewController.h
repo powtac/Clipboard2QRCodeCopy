@@ -10,6 +10,6 @@
 
 @interface Clipboard2QRCodeCopyViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *SimonImage;
-@property (weak, nonatomic) IBOutlet UILabel *SimonLabel;
+@property (strong, nonatomic) IBOutlet UILabel *SimonLabel;
 
 @end
