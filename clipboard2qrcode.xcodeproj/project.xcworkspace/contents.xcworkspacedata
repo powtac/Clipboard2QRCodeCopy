@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Clipboard2QRCodeCopy.xcodeproj">
+      location = "self:clipboard2qrcode.xcodeproj">
    </FileRef>
 </Workspace>
