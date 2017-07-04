@@ -38,6 +38,7 @@
 		AEA621EE157E96E50020F150 /* clipboard2qrcode72.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA621ED157E96E50020F150 /* clipboard2qrcode72.png */; };
 		AEA621F0157E973A0020F150 /* clipboard2qrcode57.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA621EF157E973A0020F150 /* clipboard2qrcode57.png */; };
 		AEA621F2157E973D0020F150 /* clipboard2qrcode114.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA621F1157E973D0020F150 /* clipboard2qrcode114.png */; };
+		AEB2054D1F0C357F0098D0FD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEB2054C1F0C357F0098D0FD /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		AEA621ED157E96E50020F150 /* clipboard2qrcode72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipboard2qrcode72.png; sourceTree = "<group>"; };
 		AEA621EF157E973A0020F150 /* clipboard2qrcode57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipboard2qrcode57.png; sourceTree = "<group>"; };
 		AEA621F1157E973D0020F150 /* clipboard2qrcode114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipboard2qrcode114.png; sourceTree = "<group>"; };
+		AEB2054C1F0C357F0098D0FD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		AE41DE631573FC4900FA608B = {
 			isa = PBXGroup;
 			children = (
+				AEB2054C1F0C357F0098D0FD /* Default-568h@2x.png */,
 				AE41DEFD15740A0B00FA608B /* libz.dylib */,
 				AE41DE781573FC4900FA608B /* Clipboard2QRCodeCopy */,
 				AE41DE711573FC4900FA608B /* Frameworks */,
@@ -245,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Clipboard2QRCodeCopy;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Simon Brüchner Webdesign";
 			};
 			buildConfigurationList = AE41DE681573FC4900FA608B /* Build configuration list for PBXProject "Clipboard2QRCodeCopy" */;
@@ -275,6 +278,7 @@
 				AEA621EB157E96650020F150 /* clipboard2qrcode144.png in Resources */,
 				AEA621EE157E96E50020F150 /* clipboard2qrcode72.png in Resources */,
 				AEA621F0157E973A0020F150 /* clipboard2qrcode57.png in Resources */,
+				AEB2054D1F0C357F0098D0FD /* Default-568h@2x.png in Resources */,
 				AEA621F2157E973D0020F150 /* clipboard2qrcode114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,12 +340,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -349,10 +364,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -361,16 +380,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -387,7 +419,8 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "libpng/**";
 				INFOPLIST_FILE = "Clipboard2QRCodeCopy/Clipboard2QRCodeCopy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon.bruechner.webdesign.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "./libpng/**";
@@ -405,7 +438,8 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "libpng/**";
 				INFOPLIST_FILE = "Clipboard2QRCodeCopy/Clipboard2QRCodeCopy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon.bruechner.webdesign.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "./libpng/**";
